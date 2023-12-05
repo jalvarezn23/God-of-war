@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;;
+}
+
+:root {
+    --rtc-primary-color: #16161A;
+    --rtc-secondary-color: #27272E;
+    --rtc-tertiary-color: rgb(75, 146, 213);
+    --rtc-fourthy-color: rgba(255, 255, 255, 0.7);
+    --rtc-background-color: #28282e;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: var(--rtc-background-color);
+    background-image: url('https://res.cloudinary.com/dllhfsvly/image/upload/v1700751118/297753-god-war-ya-es-juego-ps4-mejor-puntuado-historia_iwtel4.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-right: 40px;
+    gap: 20px;;
+}
+
+.image1 {
+    width: 200px;
+    height: 70px;
+    padding-top: 20px;
+}
+
+.image2 {
+    width: 500px;
+    height: 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--rtc-primary-color);
+}
+
+.menu {
+    width: 80px;
+    height: 50px;
+    padding-top: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+header > button {
+    background-color: var(--rtc-tertiary-color);
+    min-width: 200px;
+    height: 55px;
+    color: var(--rtc-primary-color);
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    min-height: 500px;
+    
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 auto;
+    gap: 20px;
+    text-shadow: 2px 2px 4px var(--rtc-fourthy-color);
+}
+
+.info > h1 {
+    font-size: 40px;
+}
+
+.info > p {
+    width: 80%;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons > button {
+    background-color: var(--rtc-tertiary-color);
+    width: 170px;
+    height: 55px;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.buttons > button:last-child {
+    background: none;
+    border: 1px solid var(--rtc-fourthy-color);
+    text-shadow: 2px 2px 4px var(--rtc-fourthy-color);
+}
+
+.hero > img {
+    width: 320px;
+    height: 200px;
+    align-self: flex-end;
+    border: 1px solid var(--rtc-tertiary-color);
+    border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+footer > div {
+    color: var(--rtc-fourthy-color);
+}
+
+@media (max-width: 570px) {
+    .info {
+        width: 100%;
+        min-width: 0px;
+        padding-left: 20px;
+    }
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        gap: 30px;
+        padding: 30px;
+    }
+    .buttons {
+        width: 100%;
+        min-width: 100%;
+        height: 100px;
+        gap: 20px;
+    }
+
+    .info > p {
+        width: 100%;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+}
+
+@media (max-width: 1220px) {
+    .image2 {
+        display: none;
+    }
+    header > button {
+        display: none;
+    }
+}
+
+
+
